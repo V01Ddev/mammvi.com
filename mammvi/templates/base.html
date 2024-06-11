@@ -4,23 +4,29 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" /> 
 
-    <!-- intro -->
+
+    <!-- landing page -->
 
     <head>
-        <section id="intro">
+    <!-- landing should go into landing.html -->
+        <section class="landing">
             {% load static %}
             <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
-            <link rel="shortcut icon" type="image/ico" href="/logo.ico">
-
-            <section id='navbar'>
-                <h6>MAMMVI</h6>
-            </section>
-
+            <h1>I am MAMMVI</h1>
+            <h2>welcome to my website</h2>
         </section>
     </head>
 
     <body>
-        <h2>Images will go in this section</h2>
+        <!-- body should include all the images and should by in images.html -->
+        <section class="">
+            <h3>QRC</h3>
+            <ul>
+                <li>
+                    <img href="{% static 'src/QRC/2023/IMG_6486.JPG' %}" class='the-images' loading='lazy'>
+                </li>
+            </ul>
+        </section>
     </body>
 
 </html>

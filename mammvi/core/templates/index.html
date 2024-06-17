@@ -8,12 +8,18 @@
     <!-- landing page -->
 
     <head>
-        <!-- landing should go into landing.html -->
         <section class="landing">
             {% load static %}
             <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <!-- Loading Jquery -->
+            <script 
+                src="https://code.jquery.com/jquery-3.7.1.js" 
+                integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
+                crossorigin="anonymous">
+            </script>
+
+            <script src="{% static 'jquery-3.7.1.js' %}"></script>
             <script src="{% static 'script.js' %}"></script>
 
             <h1>I am MAMMVI</h1>
@@ -33,21 +39,21 @@
             <p>
             As Qatar Airways was celebrating its anniversary, I managed to capture a few photos of a Qatar Airways A380 as it preformed a low pass. 
             </p>
-            <ul>
-                <li>
-                    <img src="{% static '/src/A380/1.JPG' %}" class="the-images" loading="lazy">
-                </li>
+            <div class="images-to-click">
+                <ul>
+                    <li>
+                        <img src="{% static '/src/A380/1.JPG' %}" class="the-images" loading="lazy">
+                    </li>
 
-                <li>
-                    <img src="{% static '/src/A380/2.JPG' %}" class="the-images" loading="lazy">
-                </li>
-            </ul>
+                    <li>
+                        <img src="{% static '/src/A380/2.JPG' %}" class="the-images" loading="lazy">
+                    </li>
+                </ul>
+            </div>
         </section>
 
-        <div id="image-viewer">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="full-image">
+        <div class="image-viewer">
+            <img class="full-image">
         </div>
     </body>
-
 </html>

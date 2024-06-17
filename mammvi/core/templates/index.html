@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+
+
+    <!-- landing page -->
+
+    <head>
+        <!-- landing should go into landing.html -->
+        <section class="landing">
+            {% load static %}
+            <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <script src="{% static 'script.js' %}"></script>
+
+            <h1>I am MAMMVI</h1>
+            <h2>welcome to my photography journal</h2>
+        </section>
+    </head>
+
+    <!--
+        [1] Section title using <h3>
+        [2] date taken, or range of dates
+        [3] use p tag to write paragraph about the photos
+    -->
+
+    <body>
+        <section class="A380-section">
+            <h3>The A380</h3>
+            <p>
+            As Qatar Airways was celebrating its anniversary, I managed to capture a few photos of a Qatar Airways A380 as it preformed a low pass. 
+            </p>
+            <ul>
+                <li>
+                    <img src="{% static '/src/A380/1.JPG' %}" class="the-images" loading="lazy">
+                </li>
+
+                <li>
+                    <img src="{% static '/src/A380/2.JPG' %}" class="the-images" loading="lazy">
+                </li>
+            </ul>
+        </section>
+
+        <div id="image-viewer">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="full-image">
+        </div>
+    </body>
+
+</html>

@@ -29,7 +29,7 @@
      showgrid="true"
      labelstyle="default"
      inkscape:zoom="1.6484375"
-     inkscape:cx="255.69668"
+     inkscape:cx="307.8673"
      inkscape:cy="208.68246"
      inkscape:window-width="1920"
      inkscape:window-height="1008"
@@ -62,15 +62,15 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="fill:none;stroke:#203203;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.1254902;fill-opacity:1"
+       style="fill:none;stroke:#b3b3b3;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1"
        d="m 51.559242,100.04739 199.999998,200 200,-200"
        id="path2" />
     <path
-       style="fill:none;stroke:#203203;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.1254902;fill-opacity:1"
+       style="fill:none;stroke:#b3b3b3;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1"
        d="m 51.559242,50.047393 199.999998,199.999997 200,-199.999997"
        id="path2-5" />
     <path
-       style="fill:none;stroke:#203203;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.1254902;fill-opacity:1"
+       style="fill:none;stroke:#b3b3b3;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1"
        d="m 51.559242,150.04739 199.999998,200 200,-200"
        id="path2-5-2" />
   </g>

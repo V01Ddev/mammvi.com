@@ -72,6 +72,12 @@ li {
     cursor: pointer;
 }
 
+.down-sym {
+    margin-top: 30vh;
+    height: auto;
+    max-width: 6vw;
+}
+
 /* Image viewer */
 
 .image-viewer {

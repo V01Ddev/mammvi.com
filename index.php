@@ -6,21 +6,20 @@
 
 
     <!-- landing page -->
-
     <head>
         <section class="landing">
-            {% load static %}
-            <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+            <link rel="stylesheet" type="text/css" href="styles/style.css">
 
             <!-- Loading Jquery -->
-            <script src="{% static 'jquery-3.7.1.js' %}"></script>
-            <script src="{% static 'script.js' %}"></script>
+            <script src='scripts/jquery-3.7.1.js'></script>
+            <script src='scripts/script.js'></script>
 
             <h1>I am MAMMVI</h1>
             <h2>welcome to my photography journal</h2>
             <h4>~ Please rotate your phone for the best viewing experience ~</h4>
 
-            <img src="{% static 'down.svg' %}" class="down-sym" loading="lazy">
+
+            <img src='images/down.svg' class='down-sym' loading='lazy'>
         </section>
     </head>
 
@@ -31,7 +30,8 @@
     -->
 
     <body>
-        {% block content %}
-        {% endblock %}
+<?php 
+include "content.html";
+?>
     </body>
 </html>

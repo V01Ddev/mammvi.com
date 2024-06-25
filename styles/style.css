@@ -65,6 +65,7 @@ li {
 }
 
 .the-images {
+    align-items: flex-start;
     width: 100%;
     height: auto;
     max-height: 25vw;

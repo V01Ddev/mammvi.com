@@ -34,43 +34,43 @@
             <div class="images-to-click">
                 <ul>
                     <li>
-                        <img src='/images/23_01_27/1.JPG' class="the-images">
+                        <img src='/images/23_01_27/1.JPG' class="the-images" loading='lazy'>
                     </li>
 
                     <li>
-                        <img src='/images/23_01_27/2.JPG' class="the-images">
+                        <img src='/images/23_01_27/2.JPG' class="the-images" loading='lazy'>
                     </li>
 
                     <li>
-                        <img src='/images/23_01_27/3.JPG' class="the-images">
+                        <img src='/images/23_01_27/3.JPG' class="the-images" loading='lazy'>
                     </li>
 
                     <li>
-                        <img src='/images/23_01_27/5.JPG' class="the-images">
+                        <img src='/images/23_01_27/5.JPG' class="the-images" loading='lazy'>
                     </li>
 
                     <li>
-                        <img src='/images/23_01_27/6.JPG' class="the-images">
+                        <img src='/images/23_01_27/6.JPG' class="the-images" loading='lazy'>
                     </li>
 
                     <li>
-                        <img src='/images/23_01_27/7.JPG' class="the-images">
+                        <img src='/images/23_01_27/7.JPG' class="the-images" loading='lazy'>
                     </li>
 
                     <li>
-                        <img src='/images/23_01_27/8.JPG' class="the-images">
+                        <img src='/images/23_01_27/8.JPG' class="the-images" loading='lazy'>
                     </li>
 
                     <li>
-                        <img src='/images/23_01_27/9.JPG' class="the-images">
+                        <img src='/images/23_01_27/9.JPG' class="the-images" loading='lazy'>
                     </li>
 
                     <li>
-                        <img src='/images/23_01_27/10.JPG' class="the-images">
+                        <img src='/images/23_01_27/10.JPG' class="the-images" loading='lazy'>
                     </li>
 
                     <li>
-                        <img src='/images/23_01_27/11.JPG' class="the-images">
+                        <img src='/images/23_01_27/11.JPG' class="the-images" loading='lazy'>
                     </li>
                 </ul>
             </div>
@@ -85,15 +85,15 @@
         <div class="images-to-click">
             <ul>
                 <li>
-                    <img src='/images/23_06_29/1.jpg' class="the-images">
+                    <img src='/images/23_06_29/1.jpg' class="the-images" loading='lazy'>
                 </li>
 
                 <li>
-                    <img src='/images/23_06_29/2.jpg' class="the-images">
+                    <img src='/images/23_06_29/2.jpg' class="the-images" loading='lazy'>
                 </li>
 
                 <li>
-                    <img src='/images/23_06_29/3.jpg' class="the-images">
+                    <img src='/images/23_06_29/3.jpg' class="the-images" loading='lazy'>
                 </li>
             </ul>
         </div>

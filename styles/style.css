@@ -56,12 +56,11 @@ ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: center;
 }
 
 li {
-    height: auto;
-    flex-grow: 100%;
 }
 
 .image-div {
@@ -69,7 +68,6 @@ li {
 }
 
 .the-images {
-    align-items: flex-start;
     width: 100%;
     height: 100%;
     min-width: 0;

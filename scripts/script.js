@@ -11,6 +11,7 @@ $(document).ready(function() {
     // to hide the image if anywhere else other than the imaged is clicked 
     $(".image-viewer").on( "click", function() {
         $('.image-viewer').hide();
+        $(".full-image").attr("src", '');
     });
 
     $(".full-image").on( "click", function(reg) {

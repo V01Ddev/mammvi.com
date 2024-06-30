@@ -5,7 +5,9 @@ from PIL import Image
 
 def compress(file):
 
-    os.mkdir('thm')
+    if not os.path.isdir('thm'):
+        os.mkdir('thm')
+
     with Image.open(file) as image:
         factor = 0.5
         width, height = image.size
@@ -13,6 +15,25 @@ def compress(file):
         height = int(factor * height)
 
         image = image.resize((width, height))
+
+
+        # dealing with image orientation
+
+        if hasattr(image, '_getexif'):
+            exif = image._getexif()
+            if exif:
+                for tag, label in ExifTags.TAGS.items():
+                    if label == 'Orientation':
+                        orientation = tag
+                        break
+                if orientation in exif:
+                    if exif[orientation] == 3:
+                        image = image.rotate(180, expand=True)
+                    elif exif[orientation] == 6:
+                        image = image.rotate(270, expand=True)
+                    elif exif[orientation] == 8:
+                        image = image.rotate(90, expand=True)
+
         image.save(f'thm/{file}', optimize=True)
 
 

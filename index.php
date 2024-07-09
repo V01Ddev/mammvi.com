@@ -16,7 +16,7 @@
 
             <h1>I am MAMMVI</h1>
             <h2>welcome to my photography journal</h2>
-            <h4>~ Please rotate your phone for the best viewing experience ~</h4>
+            <h4>Please rotate your phone for the best viewing experience</h4>
 
 
             <img src='images/down.svg' class='down-sym'>

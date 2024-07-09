@@ -6,11 +6,13 @@ $(document).ready(function() {
         console.log(path);
         $(".full-image").attr("src", path);
         $('.image-viewer').show();
+        $('.image-viewer').css('display', 'flex');
     });
 
     // to hide the image if anywhere else other than the imaged is clicked 
     $(".image-viewer").on( "click", function() {
         $('.image-viewer').hide();
+        $('.image-viewer').css('display', 'none');
         $(".full-image").attr("src", '');
     });
 

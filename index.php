@@ -23,6 +23,21 @@
         </section>
     </head>
 
+    <!--
+        <section class="{DATE}">
+            <h3>{TITLE}</h3>
+            <h5>{DAY}th {MONTH} {YEAR}</h5>
+            <p></p>
+            <div class="images-to-click">
+                <ul>
+                    <li>
+                        <div class="image-div">
+                            <img src='/images/{DATE}/thm/{FILENAME}' class="the-images" loading='lazy'>
+                        </div>
+                    </li>
+            </div>
+        </section>
+    -->
 
     <body>
         <section class="24_06_27">

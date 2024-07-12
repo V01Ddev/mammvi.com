@@ -24,39 +24,40 @@
     </head>
 
     <!--
-        <section class="{DATE}">
-            <h3>{TITLE}</h3>
-            <h5>{DAY}th {MONTH} {YEAR}</h5>
-            <p></p>
-            <div class="images-to-click">
-                <ul>
-                    <li>
-                        <div class="image-div">
-                            <img src='/images/{DATE}/thm/{FILENAME}' class="the-images" loading='lazy'>
-                        </div>
-                    </li>
-            </div>
-        </section>
-    -->
+<section class="{DATE}">
+<h3>{TITLE}</h3>
+<h5>{DAY}th {MONTH} {YEAR}</h5>
+<p></p>
+<div class="images-to-click">
+<ul>
+<?php
+render_images("{DATE}", "{alttext}")
+?>
+</ul>
+</section>
+-->
 
     <body>
+        <?php
+        function render_images($dirname, $alttext="")
+        {
+        $path = 'images/' . $dirname . '/thm/*';
+        $files = glob($path);
+        foreach ($files as $file) {
+        echo "<li><div class='image-div'><img src='{$file}' class='the-images' loading='lazy' alt='{$alttext}'></div></li>";
+        }
+        }
+        ?>
+
         <section class="24_06_27">
             <h3>Spain</h3>
             <h5>27th June 2024</h5>
             <p>Pictures of the Alhambra palace in Granada</p>
             <div class="images-to-click">
                 <ul>
-                    <li>
-                        <div class="image-div">
-                            <img src='/images/24_06_27/thm/1.jpg' class="the-images" loading='lazy'>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="image-div">
-                            <img src='/images/24_06_27/thm/2.jpg' class="the-images" loading='lazy'>
-                        </div>
-                    </li>
+                    <?php
+                    render_images("24_06_27", "The Alhambra palace in Granada")
+                    ?>
                 </ul>
             </div>
         </section>
@@ -66,23 +67,9 @@
             <p>Images taken in Córdoba of the Mosque-Cathedral</p>
             <div class="images-to-click">
                 <ul>
-                    <li>
-                        <div class="image-div">
-                            <img src='/images/24_06_24/thm/1.jpg' class="the-images" loading='lazy'>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="image-div">
-                            <img src='/images/24_06_24/thm/2.jpg' class="the-images" loading='lazy'>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="image-div">
-                            <img src='/images/24_06_24/thm/3.jpg' class="the-images" loading='lazy'>
-                        </div>
-                    </li>
+                <?php
+                render_images("24_06_24", "Córdoba of the Mosque-Cathedral")
+                ?>
             </div>
         </section>
 
@@ -90,11 +77,24 @@
             <h5>20th June 2024</h5>
             <div class="images-to-click">
                 <ul>
-                    <li>
-                        <div class="image-div">
-                            <img src='/images/24_06_20/thm/1.jpg' class="the-images" loading='lazy'>
-                        </div>
-                    </li>
+                <?php
+                render_images("24_06_20", "Turkish Arilines Plane")
+                ?>
+            </div>
+        </section>
+
+        <section class='23_06_29'>
+            <h3>Turkey 2023</h3>
+            <h5>29th June 2023</h5>
+            <p>
+                Random street photography in Istanbul
+            </p>
+            <div class="images-to-click">
+                <ul>
+                    <?php
+                    render_images("23_06_29", "Street photography in Istanbul")
+                    ?>
+                </ul>
             </div>
         </section>
 
@@ -107,100 +107,16 @@
             <div class="images-to-click">
                 <ul>
                     <li>
-                        <div class="image-div">
-                            <img src='/images/23_01_27/thm/1.JPG' class="the-images" loading='lazy'>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="image-div">
-                            <img src='/images/23_01_27/thm/2.JPG' class="the-images" loading='lazy'>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="image-div">
-                            <img src='/images/23_01_27/thm/3.JPG' class="the-images" loading='lazy'>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="image-div">
-                            <img src='/images/23_01_27/thm/5.JPG' class="the-images" loading='lazy'>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="image-div">
-                            <img src='/images/23_01_27/thm/6.JPG' class="the-images" loading='lazy'>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="image-div">
-                            <img src='/images/23_01_27/thm/7.JPG' class="the-images" loading='lazy'>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="image-div">
-                            <img src='/images/23_01_27/thm/8.JPG' class="the-images" loading='lazy'>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="image-div">
-                            <img src='/images/23_01_27/thm/9.JPG' class="the-images" loading='lazy'>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="image-div">
-                            <img src='/images/23_01_27/thm/10.JPG' class="the-images" loading='lazy'>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="image-div">
-                            <img src='/images/23_01_27/thm/11.JPG' class="the-images" loading='lazy'>
-                        </div>
-                    </li>
+                    <?php
+                    render_images("23_01_27", "Cars drifting in Qatar Racing Club")
+                    ?>
                 </ul>
             </div>
         </section>
-
-        <section class='23_06_29'></section>
-        <h3>Turkey 2023</h3>
-        <h5>29th June 2023</h5>
-        <p>
-            Random street photography in Istanbul
-        </p>
-        <div class="images-to-click">
-            <ul>
-                <li>
-                    <div class="image-div">
-                        <img src='/images/23_06_29/1.jpg' class="the-images" loading='lazy'>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="image-div">
-                        <img src='/images/23_06_29/thm/2.jpg' class="the-images" loading='lazy'>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="image-div">
-                        <img src='/images/23_06_29/thm/3.jpg' class="the-images" loading='lazy'>
-                    </div>
-                </li>
-            </ul>
-        </div>
 
         <!-- Image full screen view -->
         <div class="image-viewer">
             <img class="full-image">
         </div>
-
     </body>
 </html>

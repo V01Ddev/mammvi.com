@@ -38,16 +38,16 @@ render_images("{DATE}", "{alttext}")
 -->
 
     <body>
-        <?php
-        function render_images($dirname, $alttext="")
-        {
-        $path = 'images/' . $dirname . '/thm/*';
-        $files = glob($path);
-        foreach ($files as $file) {
+<?php
+function render_images($dirname, $alttext="")
+{
+    $path = 'images/' . $dirname . '/thm/*';
+    $files = glob($path);
+    foreach ($files as $file) {
         echo "<li><div class='image-div'><img src='{$file}' class='the-images' loading='lazy' alt='{$alttext}'></div></li>";
-        }
-        }
-        ?>
+    }
+}
+?>
 
         <section class="24_06_27">
             <h3>Spain</h3>
@@ -55,9 +55,9 @@ render_images("{DATE}", "{alttext}")
             <p>Pictures of the Alhambra palace in Granada</p>
             <div class="images-to-click">
                 <ul>
-                    <?php
-                    render_images("24_06_27", "The Alhambra palace in Granada")
-                    ?>
+<?php
+    render_images("24_06_27", "The Alhambra palace in Granada")
+?>
                 </ul>
             </div>
         </section>
@@ -67,9 +67,9 @@ render_images("{DATE}", "{alttext}")
             <p>Images taken in Córdoba of the Mosque-Cathedral</p>
             <div class="images-to-click">
                 <ul>
-                <?php
-                render_images("24_06_24", "Córdoba of the Mosque-Cathedral")
-                ?>
+<?php
+    render_images("24_06_24", "Córdoba of the Mosque-Cathedral")
+?>
             </div>
         </section>
 
@@ -77,9 +77,9 @@ render_images("{DATE}", "{alttext}")
             <h5>20th June 2024</h5>
             <div class="images-to-click">
                 <ul>
-                <?php
-                render_images("24_06_20", "Turkish Arilines Plane")
-                ?>
+<?php
+    render_images("24_06_20", "Turkish Arilines Plane")
+?>
             </div>
         </section>
 
@@ -91,9 +91,9 @@ render_images("{DATE}", "{alttext}")
             </p>
             <div class="images-to-click">
                 <ul>
-                    <?php
-                    render_images("23_06_29", "Street photography in Istanbul")
-                    ?>
+<?php
+    render_images("23_06_29", "Street photography in Istanbul")
+?>
                 </ul>
             </div>
         </section>
@@ -107,9 +107,9 @@ render_images("{DATE}", "{alttext}")
             <div class="images-to-click">
                 <ul>
                     <li>
-                    <?php
-                    render_images("23_01_27", "Cars drifting in Qatar Racing Club")
-                    ?>
+<?php
+    render_images("23_01_27", "Cars drifting at Qatar Racing Club")
+?>
                 </ul>
             </div>
         </section>
@@ -117,6 +117,7 @@ render_images("{DATE}", "{alttext}")
         <!-- Image full screen view -->
         <div class="image-viewer">
             <img class="full-image">
+            <u><a class="image_link" target="_blank">full image</a></u>
         </div>
     </body>
 </html>

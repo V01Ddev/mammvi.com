@@ -39,7 +39,7 @@ render_images("{DATE}", "{alttext}")
 
     <body>
 <?php
-function render_images($dirname, $alttext="")
+function render_images($dirname, $alttext = "")
 {
     $path = 'images/' . $dirname . '/thm/*';
     $files = glob($path);
